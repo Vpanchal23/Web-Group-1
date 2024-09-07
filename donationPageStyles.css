@@ -1,0 +1,127 @@
+/* styling for the header text */
+h1 
+{
+    font-size: 40px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin-top: 3.4em;
+    text-align: center;
+   
+}
+
+
+/* styling for the small image above the text in flex box 1*/
+#donation-kids-image
+{
+    height: auto;
+    padding-bottom: 25px;
+    width: 346px;
+    height: 158px;
+}
+
+
+/* styling for the entire body*/
+body
+{
+    /*adds the background image for the site*/
+    background-image: url('handsTogetherBackground.png');
+
+    color: #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+/* creates a flex container where the two columns are stored */
+.flex-container
+{
+    display: flex;
+    width: 100%;
+}
+
+/* styles for the flex boxes, not unique*/
+.box
+{
+    height: 400px;
+    min-width: 0;
+}
+
+/* styles for only text box one (the small one on the left)*/
+.text-one
+{
+    width: 346px;
+    padding-right: 60px;
+    margin-left: 400px;
+}
+
+/* styles for only text box two (the larger one on the right)*/
+.text-two
+{
+    width: 750px;
+}
+
+
+/* style for one specific piece of text that i wanted to make bold */
+#highlight
+{
+    display: block;
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* style for the buttons */
+.btn 
+{
+    display: inline-block;
+    width: 16%;
+    margin: 10px;
+    padding: 20px 30px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; 
+    color: #fff;
+    background-color: #e9c00d; 
+    border: none; 
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* changes the button text to black when the user 
+hovers over it with their cursor*/
+.btn:hover
+{
+    color: black
+}
+
+
+/* when the screen gets shrunk below 1200 pixels,
+ all these style changes go into effect to change the layout 
+ to columns and make the image fit */
+@media screen and (max-width:1200px){
+    .flex-container
+    {
+        text-align: center;
+        flex-direction: column;
+    }
+    .text-one
+    {
+        width: auto;
+        margin: auto;
+    }
+    .text-two
+    {
+        width: auto;
+        margin: auto;
+    }
+    #donation-kids-image
+    {
+        height: auto;
+        padding-bottom: 25px;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        position: center;
+    }
+}
