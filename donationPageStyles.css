@@ -52,7 +52,7 @@ body
 {
     width: 346px;
     padding-right: 60px;
-    margin-left: 400px;
+    margin-left: 15%;
 }
 
 /* styles for only text box two (the larger one on the right)*/
@@ -74,11 +74,33 @@ body
 /* style for the buttons */
 .btn 
 {
-    display: inline-block;
-    width: 16%;
-    margin: 10px;
-    padding: 20px 30px;
-    font-size: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    width: 12.5%;
+    height: 10%;
+    margin: 8px;
+    padding: 15px 20px;
+    line-height: 55px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none; 
+    color: #fff;
+    background-color: #e9c00d; 
+    border: none; 
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn2
+{
+    display: inline-flex;
+    flex-direction: row;
+    width: 20%;
+    height: 10%;
+    margin: 8px;
+    padding: 15px 20px;
+    line-height: 55px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none; 
     color: #fff;
@@ -92,7 +114,13 @@ body
 hovers over it with their cursor*/
 .btn:hover
 {
-    color: black
+    color: black;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    color: black;
+    cursor: pointer;
 }
 
 
